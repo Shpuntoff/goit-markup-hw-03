@@ -44,10 +44,10 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-.hero,
-.features,
-.whatwedo {
-    margin-bottom: 94px;
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .main-header,
 .site-nav,
@@ -71,7 +71,9 @@ p {
     color: var(--accent-color);
 }
 /* Header */
-
+header {
+    border-bottom: 1px solid #ECECEC;
+}
      /* logo */
 
 .logo {
@@ -163,7 +165,6 @@ p {
 }
 .button.list {
 
-    margin-top: 94px;
     margin-left: 280px;
     margin-right: auto;
 }
@@ -213,7 +214,7 @@ p {
     display: inline-block;
     margin-top: 0;
     width: 270px;
-    height: 75px;
+
     color: var(--secondary-text-color);
 
     line-height: 1.71;
@@ -222,6 +223,9 @@ p {
     margin-right: 30px;
 }
 /* whatwedo and team section */
+.whatwedo.section {
+    padding-top: 0;
+}
 .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -232,15 +236,10 @@ p {
 .whatwedo.list> .item:not(:last-child),
 .team.list>.card:not(:last-child) {
     margin-right: 30px;
+}
 
-}
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--secondary-bg-color);
-}
-.team.list {
-    padding: 0;
 }
 
 .member-title,
@@ -274,15 +273,17 @@ p {
 .work>.card {
     
     width: 370px;
-    height: 404px;
     border: 1px solid #EEEEEE;
 }
 .work>.card {
     margin-right: 30px;
     margin-bottom: 30px;
 }
-.work>.card:nth-child(3n+3){
+.work>.card:nth-child(3n+3) {
     margin-right: 0;
+}
+.work>.card:nth-last-child(-n+3) {
+    margin-bottom: 0;
 }
 
 .work.list {
@@ -298,16 +299,17 @@ p {
     margin-bottom: 4px;
     padding-left: 24px;
     padding-right: 24px;
-    height: 36px;
     font-size: 18px;
     line-height: 2;
     
     letter-spacing: 0.06em;
 }
 .work-description {
+    
     padding-left: 24px;
     padding-right: 24px;
-    height: 30px;
+    padding-bottom: 20px;
+
     color: var(--secondary-text-color);
 
     font-size: 16px;
@@ -315,8 +317,7 @@ p {
 }
 
 footer {
-    padding-top: 60px;
-    height: 252px;
+    padding: 60px 0px;
     background-color: var(--footer-color);
 }
 /* adress */
@@ -338,3 +339,6 @@ address {
 .streat.link {
     color: var(--main-white-text);
     }
+.contacts.tel {
+    margin-bottom: 0;
+}
