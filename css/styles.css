@@ -24,6 +24,9 @@ h3,
 p {
     margin: 0;
 }
+img {
+    display: block;
+}
 
 .list {
     padding: 0;
@@ -56,6 +59,7 @@ p {
 .work.list {
     display: flex;
 }
+
 
 
   /* Elements with Accent color */
@@ -127,10 +131,10 @@ header {
 
 .button {
     border-radius: 4px;
+    cursor: pointer;
 }
 .button.hero {
-    width: 200px;
-    height: 50px;
+
     padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;
@@ -165,21 +169,20 @@ header {
 }
 .button.list {
 
-    margin-left: 280px;
-    margin-right: auto;
+    justify-content: center;
 }
 
 
 
 /* Hero */
 .hero {
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--footer-color);
     text-align: center;
 }
 .hero .title {
     width: 696px;
-    padding-top: 200px;
 
     margin-left: auto;
     margin-right: auto;
@@ -271,11 +274,6 @@ header {
 }
 
 .work>.card {
-    
-    width: 370px;
-    border: 1px solid #EEEEEE;
-}
-.work>.card {
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -295,8 +293,8 @@ header {
 }
 
 .work-title {
-    margin-top: 20px;
     margin-bottom: 4px;
+    padding-top: 20px;
     padding-left: 24px;
     padding-right: 24px;
     font-size: 18px;
@@ -315,6 +313,12 @@ header {
     font-size: 16px;
     line-height: 1.88;
 }
+.title-description {
+    border: 1px solid #EEEEEE;
+    border-top: 0px;
+    
+}
+
 
 footer {
     padding: 60px 0px;
